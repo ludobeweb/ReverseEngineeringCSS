@@ -6,7 +6,7 @@
 		}
 		.nav1{
 	
-			float: right;
+			float: right; /*notre bouton est à droite*/
 		}
 
 		#img2{
@@ -24,5 +24,29 @@
 			display: block;
 		}
 		
-		
+		@keyframes slidy {
+				0% { left: 0%; }
+			20% { left: 0%; }
+			25% { left: -100%; }
+			45% { left: -100%; }
+			50% { left: -200%; }
+			70% { left: -200%; }
+			75% { left: -300%; }
+			95% { left: -300%; }
+			100% { left: -400%; }	/* Chaque image du carrousel sera affichée dans la div pour 20% de la durée totale de l’animation */
+		}
+
+		body { margin: 0; } 
+		div#slider { overflow: hidden; } /*cacher ce qui dépasse*/
+		div#slider figure img { width: 20%; float: left; }
+		div#slider figure { 
+  			position: relative;
+  			width: 500%;  /* si la bande d’images contient cinq images, et que notre div n’en montre qu’une, la figure est 5x plus large, c’est à dire 500% la largeur de la div  */
+  			margin: 0;
+  			left: 0;
+  			font-size: 0;
+  			animation: 30s slidy infinite; /* animation dure 30 sec et est remi à l'infini */
+		}
+
+			
 		
