@@ -1,0 +1,63 @@
+		#logo{
+			width:50px;
+			height:30px;
+		}
+
+		.nav1{
+	
+			float: right;
+		}
+		
+		.display{
+			
+			display: none;
+			
+		}
+		.nav1:hover .display{
+
+			display: inline-block;
+		}
+		
+		#img3{
+			width:800px;
+			height:400px;
+			
+		}
+		#img4{
+			width:500px;
+			height:400px;
+			float:right;
+			position:absolute; /*Les boîtes positionnées de façon absolue peuvent avoir des marges, ces marges ne fusionnent pas avec les autres marges.*/
+		}
+		#img5{
+			width:500px;
+			height:400px;
+		}
+		#img6{
+			width:800px;
+			height:400px;
+			float:right;
+			position:absolute;
+		}
+		#img7{
+			width:800px;
+			height:400px;
+		}
+		#img8{
+			width:500px;
+			height:400px;
+			float:right;
+			position:absolute;
+		}
+		#img9{
+			width:500px;
+			height:400px;
+			float:left;
+		}
+		#foot{
+			position: relative; /* grave a relative nous pouvon mettre ou on veut notre texte */
+			float: right;
+			top: 300px;
+		}
+		
+			
